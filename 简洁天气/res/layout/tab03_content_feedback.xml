@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#003333"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bar" >
+
+        <ImageButton
+            android:id="@+id/imgBtn_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:background="#00000000"
+            android:clickable="true"
+            android:onClick="send_onclick"
+            android:src="@drawable/send" />
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="意见反馈"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/imgBtn_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="#00000000"
+            android:onClick="feedback_return_onclick"
+            android:src="@drawable/point_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/imgBtn_refresh"
+            android:clickable="true"
+            android:textSize="18sp"
+            android:onClick="feedback_return_onclick"
+            android:text="返回" />
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="400dp"
+        android:background="#0f000000"
+        android:gravity="top"
+        android:layout_gravity="center"
+        android:id="@+id/et_feedback"
+        android:hint="请填写反馈内容："
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+</LinearLayout>

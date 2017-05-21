@@ -1,0 +1,224 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bar" >
+
+
+        <TextView
+            android:id="@+id/tv_didian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="星座大白"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+ 
+
+         <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择您的星座："
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:drawableLeft="@drawable/icon_colection"/>
+          <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:background="#ffffee" 
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+   
+            <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/tv_xingzuo_tiancheng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="天秤座"
+                android:clickable="true"
+                android:onClick="onClick_Xingzuo"
+                android:textSize="18sp"
+                android:layout_centerVertical="true"  
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_xingzuo_shuiping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="水瓶座"
+                android:onClick="onClick_Xingzuo"
+                android:textSize="18sp" 
+                android:clickable="true"
+                android:layout_centerVertical="true"  
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:id="@+id/tv_xingzuo_mojie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="摩羯座"
+                android:clickable="true"
+                android:onClick="onClick_Xingzuo"
+                android:layout_centerVertical="true"  
+                android:layout_marginRight="20dp"
+                android:textSize="18sp" 
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/tv_xingzuo_baiyang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="白羊座"
+                android:clickable="true"
+                android:onClick="onClick_Xingzuo"
+                android:textSize="18sp"
+                android:layout_centerVertical="true"  
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_xingzuo_juxie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="巨蟹座"
+                android:clickable="true"
+                android:onClick="onClick_Xingzuo"
+                android:textSize="18sp" 
+                android:layout_centerVertical="true"  
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:id="@+id/tv_xingzuo_jinniu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="金牛座"
+                android:clickable="true"
+                android:onClick="onClick_Xingzuo"
+                android:layout_centerVertical="true"  
+                android:layout_marginRight="20dp"
+                android:textSize="18sp" 
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/tv_xingzuo_shizi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="狮子座"
+                android:clickable="true"
+                android:onClick="onClick_Xingzuo"
+                android:textSize="18sp"
+                android:layout_centerVertical="true"  
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_xingzuo_tianxie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="天蝎座"
+                android:clickable="true"
+                android:onClick="onClick_Xingzuo"
+                android:textSize="18sp" 
+                android:layout_centerVertical="true"  
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:id="@+id/tv_xingzuo_shuangzi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="双子座"
+                android:clickable="true"
+                android:onClick="onClick_Xingzuo"
+                android:layout_centerVertical="true"  
+                android:layout_marginRight="20dp"
+                android:textSize="18sp" 
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/tv_xingzuo_chunv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="处女座"
+                android:clickable="true"
+                android:onClick="onClick_Xingzuo"
+                android:textSize="18sp"
+                android:layout_centerVertical="true"  
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_xingzuo_sheshou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="射手座"
+                android:clickable="true"
+                android:onClick="onClick_Xingzuo"
+                android:textSize="18sp" 
+                android:layout_centerVertical="true"  
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:id="@+id/tv_xingzuo_shuangyu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="双鱼座"
+                android:clickable="true"
+                android:onClick="onClick_Xingzuo"
+                android:layout_centerVertical="true"  
+                android:layout_marginRight="20dp"
+                android:textSize="18sp" 
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+        
+        
+  
+    </LinearLayout>
+</LinearLayout>
